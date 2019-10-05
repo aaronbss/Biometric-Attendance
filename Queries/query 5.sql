@@ -1,0 +1,1 @@
+SELECT t.TSubject,t.TName,t.TID, COUNT(*) Lectures_Conducted FROM teacher t INNER JOIN status_attendance s ON s.TID LIKE CONCAT(t.TID, "%") 
